@@ -49,6 +49,8 @@ function Payment() {
     async function handleSubmit(event) {
         event.preventDefault()
 
+    if (localStorage.length !== 0) {
+
         setProcessing(true);
 
         try {
@@ -82,6 +84,10 @@ function Payment() {
         } catch(error) {
         console.log("error during payment", error);
         }
+
+    } else {
+        alert("Create an account or Login to continue");
+    }
     }
 
     // async function handleSubmit(event) {
