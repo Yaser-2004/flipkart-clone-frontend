@@ -1,0 +1,39 @@
+.price__details {
+    border-bottom: 1px solid rgb(203, 203, 203);
+    color: grey;
+}
+
+.subtotal {
+    box-shadow: 0 0 0 0.5px #c9c9c9;
+}
+
+.subtotal p, .subtotal h2 {
+    padding: 15px;
+}
+
+.div_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details2 {
+    border-bottom: dashed 1px rgb(203, 203, 203);
+}
+
+@media(max-width: 400px) {
+    .price__details {
+        font-size: 14px;
+    }
+
+    .subtotal p, .subtotal h2 {
+        padding: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .div_flex {
+        font-size: 12px;
+    }
+}
+

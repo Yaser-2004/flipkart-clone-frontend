@@ -1,0 +1,123 @@
+.login__container {
+    width: 850px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    box-shadow: 0 1px 5px 1px rgb(0 0 0 / 0.1);
+}
+
+.login__left__div {
+    flex: 0.35;
+    background-color: #2A55E5;
+    padding: 40px;
+    color: white;
+}
+
+.login__left__div h2 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.login__left__div p {
+    font-size: large;
+    line-height: 1.5;
+}
+
+.login__right__div {
+    flex: 0.65;
+    padding-top: 40px;
+    position: relative;
+}
+
+.login__right__div input {
+    width: 80%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    font-size: medium;
+}
+
+.login__right__div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.login__right__div input:focus {
+    outline: none;
+}
+
+.login__right__div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+.login__right__div div p {
+    color: #2A55E5;
+    font-weight: 600;
+    margin-bottom: -10px;
+}
+
+.login__right__div button {
+    width: 80%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: medium;
+    border: none;
+    background-color: #FB641B;
+    color: white;
+    border-radius: 2px;
+}
+
+.login__right__div div > a{
+    text-decoration: none;
+}
+
+.login__right__div button:hover {
+    cursor: pointer;
+}
+
+@media(max-width: 400px) {
+    .login__container{
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .login__right__div {
+        flex: 0.65;
+        padding-top: 40px;
+        position: relative;
+    }
+
+    .login__right__div div {
+        bottom: 0;
+        height: 50px;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .login__right__div button {
+        height: 40px;
+    }
+
+    .login__right__div form > p {
+        width: 80%;
+    }
+
+    .login__right__div div > a{
+        text-decoration: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+}
